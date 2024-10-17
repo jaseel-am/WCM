@@ -1,0 +1,90 @@
+<div class="list-group" >
+  <button (click)="toggleMenu()" class="toggle-button">
+    <fa-icon [ngClass]="isCollapsed ? 'fa-solid fa-align-right' : 'fa-solid fa-align-left'"></fa-icon>
+  </button>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/dashboard']">
+    <i class="fas fa-home"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Dashboard</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/generalinfo']">
+    <i class="fa-solid fa-star"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">General Info</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/scopeofwell']">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Scope of Well</span>
+  </a>
+
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/holesection']">
+    <i class="fa-solid fa-bore-hole"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Hole section</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/casing']">
+    <i class="fa-solid fa-vial-virus"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Casing</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/cementing']">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Cementing</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/mud']">
+    <i class="fa-solid fa-hill-rockslide"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Mud</span>
+  </a>
+
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/geologicalpro']">
+    <i class="fa-solid fa-hill-rockslide"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Geological Prognosys</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/formation']">
+    <i class="fa-solid fa-hill-rockslide"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Formation</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/riskregister']">
+    <i class="fa-solid fa-hill-rockslide"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Risk Register</span>
+  </a>
+
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/timebreakdown']">
+    <i class="fa-solid fa-calendar-days"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Time Breakdown</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/materialbreakdown']">
+    <i class="fa-solid fa-pen-ruler"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Material Breakdown</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/servicebreakdown']">
+    <i class="fa-solid fa-hand-holding-heart"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Service Breakdown</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/costsummary']">
+    <i class="fa-solid fa-chart-column"></i>
+    <span *ngIf="!isCollapsed" class="menu-text">Cost Summary</span>
+  </a>
+
+  <!-- <a class="list-group-item list-group-item-action" [routerLink]="['/master/user']">
+    <i class="fas fa-user"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">User Management</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/master/role']">
+    <i class="fas fa-user-shield"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Role Management</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/sales']">
+    <i class="fas fa-chart-line"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Sales</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/transaction/purchase']">
+    <i class="fas fa-shopping-cart"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Purchase</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/report/salesreport']">
+    <i class="fas fa-file-invoice-dollar"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Sales Report</span>
+  </a>
+  <a class="list-group-item list-group-item-action" [routerLink]="['/report/purchasereport']">
+    <i class="fas fa-receipt"></i> 
+    <span *ngIf="!isCollapsed" class="menu-text">Purchase Report</span>
+  </a> -->
+</div>
+

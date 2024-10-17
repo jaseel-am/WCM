@@ -1,0 +1,46 @@
+.list-group {
+  transition: width 0.3s ease;
+  transition: margin-left 0.3s ease; /* Smooth transition */
+}
+
+.collapsed {
+  width: 50px;
+  /* Collapse to a smaller width */
+}
+
+.toggle-button {
+  position: relative;
+  display: block;
+  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-bg);
+  border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+}
+
+.list-group-item i {
+  margin-right: 10px;
+  /* Adjust the space between icon and text */
+}
+
+/* Adjust the left menu when it's collapsed */
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-text {
+  margin-left: 10px;
+  /* Space between icon and text */
+}
+
+.list-group-item i {
+  font-size: 1.2rem;
+  /* Icon size */
+}
+
+.col-md-1 .menu-text {
+  display: none;
+  /* Hide text when menu is collapsed */
+}

@@ -1,0 +1,72 @@
+body {
+  background-color: #f7f8fa !important;
+}
+
+// card style alteration 
+.card {
+  /* Set card background to white */
+  border-radius: 0;
+  /* Remove border radius */
+}
+
+.card-header {
+  background-color: #ffffff !important;
+}
+
+// bootstrap controll default style altering here throught application...................
+/* Reduce font size and height of textboxes, select inputs, and buttons */
+.form-control,
+.btn,
+.form-select {
+  padding: 0.25rem 0.5rem!important;
+  font-size: 0.75rem!important;
+  height: 28px!important;
+}
+
+/* Reduce height of table rows */
+.table tr {
+  height: 30px!important;
+}
+
+/* Ensure table cells respect reduced row height */
+.table td,
+.table th {
+  padding: 0.25rem 0.5rem!important;
+  font-size: 0.68rem!important;
+  vertical-align: middle!important;
+}
+.btn {
+  padding: 0.25rem 0.5rem!important;
+  font-size: 0.75rem!important;
+  height: 28px!important;
+  line-height: 1.1!important;
+}
+.btn-sm
+{
+  padding: 0.21rem 0.5rem!important;
+  font-size: 0.65rem!important;
+  height: 22px!important;
+  line-height: 1!important;
+}
+.input-group .form-control {
+  padding: 0.25rem 0.5rem!important;
+  font-size: 0.75rem!important;
+  height: 28px!important;
+}
+.form-label {
+  font-size: 0.75rem!important;
+}
+
+.card-header h5 {
+  font-size: 0.85rem!important;
+}
+
+.table {
+  border: 1px solid #dee2e6!important;
+}
+.form-label {
+  margin-bottom: .5rem!important;
+  color: #086192!important;
+  font-weight: 500!important;
+  font-size: 0.65rem !important;
+}

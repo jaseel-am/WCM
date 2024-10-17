@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid">
+    <!-- Left Side: Logo -->
+    <a class="navbar-brand" href="#">
+      <!-- <img src="assets/images/logo.png" alt="App Logo" width="30" height="30" class="d-inline-block align-text-top"> -->
+      WCM
+    </a>
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/general/inbox']" routerLinkActive="active">Inbox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/general/welltypelist']" routerLinkActive="active">Welltype List</a>
+        </li>
+
+        <!-- General Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+            General
+          </span>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/general/inbox']" routerLinkActive="active">Inbox</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/general/welltypelist']" routerLinkActive="active">Welltype List</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Master Dropdown -->
+        <!-- <li class="nav-item dropdown" [ngClass]="{'active': isActive(['/master/user', '/master/role'])}">
+          <a class="nav-link dropdown-toggle" href="#" id="masterDropdown" role="button" data-bs-toggle="dropdown">
+            Master
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/master/user']" routerLinkActive="active">User Management</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/master/role']" routerLinkActive="active">Role Management</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Transaction Dropdown -->
+        <!-- <li class="nav-item dropdown" [ngClass]="{'active': isActive(['/transaction/sales', '/transaction/purchase'])}">
+          <a class="nav-link dropdown-toggle" href="#" id="transactionDropdown" role="button" data-bs-toggle="dropdown">
+            Transaction
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/transaction/sales']" routerLinkActive="active">Sales</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/transaction/purchase']" routerLinkActive="active">Purchase</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Report Dropdown -->
+        <!-- <li class="nav-item dropdown" [ngClass]="{'active': isActive(['/report/salesreport', '/report/purchasereport'])}">
+          <a class="nav-link dropdown-toggle" href="#" id="reportDropdown" role="button" data-bs-toggle="dropdown">
+            Report
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/report/salesreport']" routerLinkActive="active">Sales Report</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/report/purchasereport']" routerLinkActive="active">Purchase Report</a></li>
+          </ul>
+        </li> -->
+      </ul>
+
+      <!-- Right Side: Logged-in User -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+            Jaseel Ariyadan Mohammed
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Signout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

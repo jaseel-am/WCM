@@ -1,0 +1,96 @@
+<div class="p-1">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h4>Welltype List</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-header">
+        <h5>Well Type</h5>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="row align-items-end">
+                <div class="col-md-2 mb-3">
+                    <label for="inputEmail" class="form-label">Well Type</label>
+                    <input type="text" class="form-control" id="inWell" placeholder="Enter Well Type">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Catalogue Year</label>
+                    <input type="text" class="form-control" id="inCatelogue" placeholder="Catalogue Year">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Cluster</label>
+                    <input type="text" class="form-control" id="inCluster" placeholder="Cluster">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Status</label>
+                    <input type="text" class="form-control" id="inStatus" placeholder="Status">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label class="form-label">Action Party</label>
+                    <input type="text" class="form-control" id="inStatus" placeholder="Action Party">
+                </div>
+                <div class="col-md-2 mb-3 d-flex justify-content-start">
+                    <button type="button" class="btn btn-primary me-2">Search</button>
+                    <button type="button" class="btn btn-warning">Clear</button>
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-hover mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Well Type</th>
+                    <th scope="col">Catalogue Year</th>
+                    <th scope="col">Cluster</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" style="width: 120px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>ETL323TY12</td>
+                    <td>2025</td>
+                    <td>Fahud</td>
+                    <td>Approved</td>
+                    <td style="width: 120px;">
+                        <button class="btn btn-primary btn-sm me-1" (click)="goToGeneralInfo()">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm me-1">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        <button class="btn btn-warning btn-sm">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>EXEP893</td>
+                    <td>2025</td>
+                    <td>Fahud</td>
+                    <td>Approved</td>
+                    <td style="width: 120px;">
+                        <button class="btn btn-primary btn-sm me-1" (click)="goToGeneralInfo()">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm me-1">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        <button class="btn btn-warning btn-sm">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

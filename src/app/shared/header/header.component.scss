@@ -1,0 +1,98 @@
+/* Ensure the dropdown menu is properly positioned */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure the dropdown is above other elements */
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Show dropdown on hover, ensure it stays visible */
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown .dropdown-menu:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Fix submenu disappearing when moving mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Add padding to prevent sudden disappearance */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  top: calc(100% + 0px); /* Position submenu right below the parent */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Additional space for easier access */
+.nav-item.dropdown {
+  position: relative; /* Important for absolute positioning of dropdown */
+}
+
+/* Dropdown items styling */
+.dropdown-item {
+  color: #343a40; /* Dark color for better visibility */
+  padding: 10px 20px;
+}
+
+/* Link styles */
+.navbar-nav .nav-link {
+  color: #343a40; /* Changed to dark color for visibility */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Primary color on hover */
+}
+
+/* Hover effects for dropdown items */
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #007bff; /* Primary color */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Ensure dropdown stays open when moving between parent and submenu */
+.navbar-nav .dropdown-menu:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Add transition delay before submenu disappears */
+.navbar-nav .dropdown-menu {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.navbar-nav .dropdown-menu:hover {
+  transition-delay: 0.2s; /* Add delay to give time when moving the mouse */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    margin-top: 0;
+  }
+}
+
+/* Active state styling */
+.nav-item.active .nav-link {
+  background-color: #0056b3; /* Darker color for active state */
+  color: white; /* Text color for active state */
+}
+
+

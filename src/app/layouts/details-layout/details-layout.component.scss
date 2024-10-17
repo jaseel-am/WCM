@@ -1,0 +1,23 @@
+.container-fluid {
+  transition: margin-left 0.3s ease;
+  /* Smooth transition */
+}
+
+.collapsed-menu .container-fluid {
+  margin-left: 50px;
+  /* Adjust content margin when menu is collapsed */
+}
+
+.expanded-menu .container-fluid {
+  margin-left: 200px;
+  /* Adjust content margin when menu is expanded */
+}
+
+.minleft {
+  width: 4.3% !important;
+}
+
+.maxcenter {
+  width: 95.666667% !important;
+}
+
